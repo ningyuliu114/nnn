@@ -1,0 +1,53 @@
+---
+title: "Leading Causes of Death in China"
+author: "Ning Ning Liu"
+date: "Jan 9th 2017"
+output:
+  ioslides_presentation
+---
+## Total Population
+1.Total population :1.4billion
+2.18% of them is under 15 
+3.14% of them is over 60
+```{r, echo=FALSE, message=FALSE}
+library(plotly)
+plot_ly(
+  type = 'scattergeo',
+  lon=c(116.363625),
+  lat=c(39.913818),
+  text=('China'),
+  mode='markers')
+```
+
+## Leading Causes of Death in China
+1 - Malignant Neoplasms
+2 - Heart Disease
+3 - Cerebrovascular Disease
+4 - Diseases of the Respiratory System
+5 - Endocrine, Nutritional&Metabolic Diseases
+```{r, echo=FALSE, message=FALSE}
+plot_ly(x = c(1,2,3,4,5),
+        y=c(0.28,0.21,0.11,0.05,0.034),
+        type='bar')
+```
+
+## Prediction
+Let's say if the data increases 0.1 in the next year 
+```{r, echo=FALSE, message=FALSE}
+library(plotly)
+plot_ly(x = c(1,2,3,4,5),
+        y=c(0.38,0.31,0.21,0.15,0.134),
+        type='scatter',
+        mode='markers')
+plot_ly(x = c(1,2,3,4,5),
+        y=c(0.28,0.21,0.11,0.05,0.034),
+        type='scatter',
+        mode='markers')
+```
+
+## Recommendation for Business
+1 - Malignant Neoplasms
+2 - Heart Disease
+3 - Cerebrovascular Disease
+4 - Diseases of the Respiratory System
+5 - Endocrine, Nutritional&Metabolic Diseases
